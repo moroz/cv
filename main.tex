@@ -12,25 +12,29 @@
 
 \definecolor{titlecolor}{RGB}{48, 51, 107}
 \definecolor{darkgray}{RGB}{80, 80, 80}
+\definecolor{subsectioncolor}{RGB}{54, 54, 54}
 
 \titleformat{\section}{\large\sffamily\color{titlecolor}}{}{0em}{}
-\titlespacing{\section}{0pt}{0pt}{0pt}
+\titlespacing{\section}{0pt}{0pt}{3pt}
 
-\newfontface\TitleFont[Scale=3.5]{PTSerif-Bold}
-\setmainfont{Source Sans Pro}
+\titleformat{\subsection}{\small\rmfamily\color{subsectioncolor}\bfseries}{}{0em}{}
+\titlespacing{\subsection}{0pt}{9pt}{3pt}
+
+\newfontface\TitleFont[Scale=3.5]{Lato-Bold}
+\setmainfont{Lato}
 \setmonofont{DejaVu Sans Mono}
-\setsansfont{PTSerif-Bold}
+\setsansfont{AdobeTextPro-Bold}
 \setCJKmainfont[Scale=.9]{Noto Sans CJK TC}
 
-\newcommand{\project}[3]{\par\vspace{1em}\textbf{\normalsize #1}\\[1pt]{\small\texttt{#2 // #3}}\\[4pt]}
-\newcommand{\projectweb}[4]{\par\vspace{1em}\textbf{\normalsize #1} \href{#2}{\color{darkgray} @ #2}\\[1pt]{\small\texttt{#3 // #4}}\\[4pt]}
-
+\newcommand{\project}[3]{\par\vspace{1em}\textbf{\normalsize #1}\\{\footnotesize\texttt{#2 // #3}}\\[4pt]}
+\newcommand{\projectweb}[4]{\par\vspace{1em}\textbf{\normalsize #1} \href{#2}{\color{darkgray} @ #2}\\{\footnotesize\texttt{#3 // #4}}\\[4pt]}
+\newcommand{\experience}[4]{\par\vspace{1em}\textbf{\normalsize #1} {\color{darkgray} @ #2}\\{\footnotesize\texttt{#3 // #4}}\\[4pt]}
 
 \begin{document}
 \pagestyle{empty}
-{\TitleFont\color{titlecolor} Karol Moroz}
+\hspace{-1.5pt}{\TitleFont\color{titlecolor} Karol Moroz}
 
-\texttt{Full Stack Software Developer}
+\texttt{Full Stack Software Developer @ Kaohsiung, TW}
 
 \icon{email}
 \href{mailto:k.j.moroz@gmail.com}{k.j.moroz@gmail.com} \hfill
@@ -42,6 +46,7 @@
 \begin{minipage}[t]{0.67\textwidth}
   \raggedright
   \section{Projects}
+  \vspace*{-6pt}
 
   \projectweb{Print Your Own Foto}{https://artplate.store/pyof}{September {–} October 2020}{Kobe Nutrition, PL}
 
@@ -67,8 +72,7 @@
   \projectweb{Donut MLOps}{https://donut.libgirl.com}{March {–} May 2020}{Libgirl Co., Ltd., TW}
 
   \small
-  A unified solution designed to keep track of ML models, 
-  editor for crafting personalized photo collages, with support for Instagram-like filters, image frames, text overlay, cropping. Built with React.js talking to a Laravel back end, utilizing direct S3 PUT uploads, CloudFront caching, CodePipeline.
+  A unified solution designed to keep track of ML models, efficiencies, evaluations, and iterations. Experimental one-click deployment of PyTorch models to GCP.
 
   \projectweb{Injobs.pl}{https://www.injobs.pl}{April {–} August 2017}{Injobs.pl Sp. z o. o., PL}
 
@@ -80,9 +84,87 @@
   \small
   Database for online sellers who have encountered problematic buyers and want to share their experiences with other sellers. Full rewrite of an earlier iteration of the application, built with Ruby on Rails.
 
+  \vspace{1.2em}
+  \section{Experience}
+  \vspace*{-6pt}
+
+  \experience{Software Developer}{Cogini Hong Kong Limited}{May {–} December 2019}{Taipei, TW}
+
+  \small Phoenix, React, Ruby on Rails, Python, Front End, CI/CD, Terraform, AWS
+
+  \experience{Software Developer}{Access AP Taiwan}{October 2018 {–} May 2019}{Taipei, TW}
+
+  \small Phoenix, React, in-house Elixir frameworks and libraries
+
+  \experience{Software Developer}{Reverse-Retail GmbH}{September 2017 {–} July 2018}{Hamburg, DE}
+
+  \small Ruby on Rails, MySQL
+
+  \experience{Software Development Intern}{Goodlife.TW}{December 2016 {–} February 2017}{Taipei, TW}
+
+  \small Ruby on Rails, MySQL
+
 \end{minipage}\hspace{0.03\textwidth}%
 \begin{minipage}[t]{0.3\textwidth}
+  \raggedright
   \section{Skills}
+
+  \subsection{Programming languages}
+
+  \small
+  Elixir, TypeScript, Ruby, Erlang, Python, HTML, CSS, C
+  \vspace{4pt}
+
+  \subsection{Libraries \& Frameworks}
+
+  \small
+  Phoenix, React.js, Next.js, Gatsby, Vue.js, Ruby on Rails, Express, Apollo GraphQL, Flask, Sequelize, TypeORM, Mongoose
+  \vspace{4pt}
+
+  \subsection{Cloud \& DevOps}
+
+  \small
+  AWS: S3, CloudFront, CodePipeline, RDS, EC2, ACM, IAM\\ Docker, Ansible, Terraform, Packer
+  \vspace{4pt}
+
+  \subsection{Tooling}
+
+  \small
+  Debian, macOS, Neovim, Spacemacs, VSCode, Webpack, PostgreSQL, MySQL/MariaDB, Adobe XD, Photoshop, Illustrator
+  \vspace{12pt}
+
+  \section{Education}
+  \vspace{-6pt}
+
+  \project{National Taiwan Normal University}{2018 {–}}{Taipei, TW}
+
+  \small Master Programme, Graduate Institute of Translation and Interpretation
+
+  \project{Adam Mickiewicz University}{2012 {–} 2016}{Poznań, PL}
+
+  \small Bachelor of Arts in Chinese Studies
+  
+  \vspace{12pt}
+
+  \section{Languages}
+
+  \small
+  \subsection{Native language} Polish \vspace{4pt}
+
+  \subsection{Fluent}
+  English (IELTS 8)\\ Mandarin Chinese (TOCFL 4)\\ German (Goethe-Institut ZMP) \vspace{4pt}
+
+  \subsection{Good command}
+  Russian, Spanish \vspace{4pt}
+
+  \subsection{Communicative}
+  Japanese, Esperanto, Norwegian
+
+  \vspace{12pt}
+
+  \section{Interests}
+
+  \small Foreign languages, programming, traveling, ashtanga yoga, lifelong learning
 
 \end{minipage}
 
