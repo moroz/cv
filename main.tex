@@ -1,0 +1,89 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{fontspec,xeCJK,parskip,hyperref,graphicx,setspace,titlesec}
+\usepackage[usenames,dvipsnames]{xcolor}
+
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+\author{Karol Moroz}
+
+\newcommand{\icon}[1]{$\vcenter{\hbox{\includegraphics[height=1em]{#1.png}}}$\hspace{.2em}}
+
+\definecolor{titlecolor}{RGB}{48, 51, 107}
+\definecolor{darkgray}{RGB}{80, 80, 80}
+
+\titleformat{\section}{\large\sffamily\color{titlecolor}}{}{0em}{}
+\titlespacing{\section}{0pt}{0pt}{0pt}
+
+\newfontface\TitleFont[Scale=3.5]{PTSerif-Bold}
+\setmainfont{Source Sans Pro}
+\setmonofont{DejaVu Sans Mono}
+\setsansfont{PTSerif-Bold}
+\setCJKmainfont[Scale=.9]{Noto Sans CJK TC}
+
+\newcommand{\project}[3]{\par\vspace{1em}\textbf{\normalsize #1}\\[1pt]{\small\texttt{#2 // #3}}\\[4pt]}
+\newcommand{\projectweb}[4]{\par\vspace{1em}\textbf{\normalsize #1} \href{#2}{\color{darkgray} @ #2}\\[1pt]{\small\texttt{#3 // #4}}\\[4pt]}
+
+
+\begin{document}
+\pagestyle{empty}
+{\TitleFont\color{titlecolor} Karol Moroz}
+
+\texttt{Full Stack Software Developer}
+
+\icon{email}
+\href{mailto:k.j.moroz@gmail.com}{k.j.moroz@gmail.com} \hfill
+\icon{telephone} +886 916-945-080 \hfill
+\icon{youtube} \href{https://www.youtube.com/channel/UCW_YiVuoo-WG0bxQElVgxAg}{Make Programming Fun Again} \hfill
+\icon{github} \href{https://github.com/moroz}{moroz} \hfill
+\icon{web} \href{https://www.moroz.dev}{moroz.dev}
+
+\begin{minipage}[t]{0.67\textwidth}
+  \raggedright
+  \section{Projects}
+
+  \projectweb{Print Your Own Foto}{https://artplate.store/pyof}{September {–} October 2020}{Kobe Nutrition, PL}
+
+  \small
+  Web-based editor for crafting personalized photo collages, with support for Instagram-like filters, image frames, text overlay, cropping. Built with React.js talking to a Laravel back end, utilizing direct S3 uploads, CloudFront caching, CodePipeline.
+
+  \project{Bazaro e-commerce}{2020}{Side project}
+
+  \small
+  In my spare time, I co-operate with a friend---an certified Magento developer---to build a fast and reliable open source e-commerce platform in Elixir.
+
+  \projectweb{Horizon-Sim}{https://www.horizon-sim.com}{2019}{Horizon, TW}
+
+  \small
+  Custom e-commerce solution built with Elixir, Phoenix, and React.js, with custom payment gateway integration.
+
+  \project{Beacon Parameter Management System}{October {–} November 2018}{Access AP, TW}
+
+  \small
+  Full stack Single-Page Application built for a Japanese client, used to manage serial numbers of mass-produced
+  devices, generate CSV reports and QR code sheets.
+
+  \projectweb{Donut MLOps}{https://donut.libgirl.com}{March {–} May 2020}{Libgirl Co., Ltd., TW}
+
+  \small
+  A unified solution designed to keep track of ML models, 
+  editor for crafting personalized photo collages, with support for Instagram-like filters, image frames, text overlay, cropping. Built with React.js talking to a Laravel back end, utilizing direct S3 PUT uploads, CloudFront caching, CodePipeline.
+
+  \projectweb{Injobs.pl}{https://www.injobs.pl}{April {–} August 2017}{Injobs.pl Sp. z o. o., PL}
+
+  \small
+  Job board with company and applicant profiles, promoted job ads, and custom payment gateway integration. Built with Ruby on Rails.
+
+  \projectweb{BadBuyerList.org}{https://badbuyerlist.org/}{December 2016 {–} January 2017}{GoodLife.TW 好生活, TW}
+
+  \small
+  Database for online sellers who have encountered problematic buyers and want to share their experiences with other sellers. Full rewrite of an earlier iteration of the application, built with Ruby on Rails.
+
+\end{minipage}\hspace{0.03\textwidth}%
+\begin{minipage}[t]{0.3\textwidth}
+  \section{Skills}
+
+\end{minipage}
+
+\end{document}
