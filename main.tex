@@ -8,22 +8,22 @@
 
 \author{Karol Moroz}
 
-\newcommand{\icon}[1]{$\vcenter{\hbox{\includegraphics[height=1em]{#1.png}}}$\hspace{.2em}}
+\newcommand{\icon}[1]{$\vcenter{\hbox{\includegraphics[height=.9em]{#1.png}}}$\hspace{.2em}}
 
 \definecolor{titlecolor}{RGB}{48, 51, 107}
 \definecolor{darkgray}{RGB}{80, 80, 80}
 \definecolor{subsectioncolor}{RGB}{54, 54, 54}
 
-\titleformat{\section}{\large\sffamily\color{titlecolor}}{}{0em}{}
+\titleformat{\section}{\large\bfseries\sffamily\color{titlecolor}}{}{0em}{}
 \titlespacing{\section}{0pt}{0pt}{3pt}
 
 \titleformat{\subsection}{\small\rmfamily\color{subsectioncolor}\bfseries}{}{0em}{}
 \titlespacing{\subsection}{0pt}{9pt}{3pt}
 
-\newfontface\TitleFont[Scale=3.5]{Lato-Bold}
-\setmainfont{Lato}
-\setmonofont{DejaVu Sans Mono}
-\setsansfont[Scale=1.1]{Lato-Bold}
+\newfontface\TitleFont[Scale=3.5]{IBM Plex Sans Bold}
+\setmainfont{IBM Plex Sans}
+\setmonofont[Scale=.9]{Fira Mono}
+\setsansfont[Scale=1.1]{IBM Plex Sans}
 \setCJKmainfont[Scale=.9]{Noto Sans CJK TC}
 
 \newcommand{\project}[3]{\par\vspace{1em}\textbf{\normalsize #1}\\{\footnotesize\texttt{#2 // #3}}\\[4pt]}
@@ -38,8 +38,8 @@
 
 \icon{email}
 \href{mailto:karol@moroz.dev}{karol@moroz.dev} \hfill
-\icon{telephone} +48 735-935-972 \hfill
-\icon{youtube} \href{https://www.youtube.com/channel/UCW_YiVuoo-WG0bxQElVgxAg}{Make Programming Fun Again} \hfill
+\raisebox{0.15\height}{\icon{telephone}} +48 735-935-972 \hfill
+\raisebox{0.15\height}{\icon{youtube}} \href{https://www.youtube.com/channel/UCW_YiVuoo-WG0bxQElVgxAg}{Make Programming Fun Again} \hfill
 \icon{github} \href{https://github.com/moroz}{moroz} \hfill
 \icon{web} \href{https://moroz.dev}{moroz.dev}
 
@@ -49,15 +49,23 @@
   \section{Experience}
   \vspace*{-6pt}
 
-  \experience{Senior Elixir Developer}{LL Informatics}{September 2021 {-} present}{Warsaw, PL}
+  \experience{Senior Full Stack Developer}{virtualQ GmbH}{August 2022 {-} present}{Berlin, DE / remote}
 
-  \experience{Elixir / Node / Full Stack Developer}{The Barking Dog Entertainment 愛吠的狗}{October 2020 {-} August 2021}{Kaohsiung, TW}
+  Elixir, Rails, React, Svelte, Terraform
 
-  \experience{Elixir / Full Stack Developer}{Cogini Hong Kong Limited}{May {–} December 2019}{Taipei, TW}
+  \experience{Senior Elixir Developer}{LL Informatics}{September 2021 {-} July 2022}{Warsaw, PL}
 
-  \experience{Elixir / Full Stack Developer}{Access AP Taiwan}{October 2018 {–} May 2019}{Taipei, TW}
+  Elixir, Rails, React
 
-  \experience{Software Developer}{Reverse-Retail GmbH}{September 2017 {–} July 2018}{Hamburg, DE}
+  \experience{Full Stack Developer}{The Barking Dog Entertainment 愛吠的狗}{October 2020 {-} present}{Kaohsiung, TW}
+
+  Node.js, Elixir, React, Go, Terraform. After August 2021 working as a contractor on a per-project basis.
+
+  \experience{Full Stack Developer}{Cogini Hong Kong Limited}{May {–} December 2019}{Taipei, TW}
+
+  \experience{Full Stack Developer}{Access AP Taiwan}{October 2018 {–} May 2019}{Taipei, TW}
+
+  \experience{Junior Software Developer}{Reverse-Retail GmbH}{September 2017 {–} July 2018}{Hamburg, DE}
 
   \experience{Software Development Intern}{Goodlife.TW}{December 2016 {–} February 2017}{Taipei, TW}
   \vspace{1.2em}
@@ -66,38 +74,40 @@
 \end{minipage}\hspace{0.03\textwidth}%
 \begin{minipage}[t]{0.3\textwidth}
   \raggedright
-  \section{Skills}
+  \section{Technologies}
 
   \subsection{Programming languages}
 
   \small
-  Elixir, TypeScript, Ruby, Erlang, HTML, CSS, Rust
+  Elixir, TypeScript, Ruby, Erlang, HTML, CSS, Rust, Go
   \vspace{4pt}
 
   \subsection{Libraries \& Frameworks}
 
   \small
-  Phoenix, React, Next.js, Gatsby, Vue, Ruby on Rails, Express, Apollo GraphQL
+  Phoenix, React, Next.js, Ruby on Rails
   \vspace{4pt}
 
   \subsection{Cloud \& DevOps}
 
   \small
-  AWS: S3, CloudFront, CodePipeline, RDS, EC2, ACM, IAM\\ Docker, Ansible, Terraform, Packer
+  AWS: EC2, ECS/Fargate, S3, RDS, DynamoDB, CodePipeline, ECR et al.
+
+  Docker, Ansible, Terraform
   \vspace{4pt}
 
   \subsection{Tooling}
 
   \small
-  macOS or Debian, nvim, Vite, Webpack, PostgreSQL, MySQL/MariaDB
+  GNU/Linux or macOS, Neovim, Vite, PostgreSQL
   \vspace{12pt}
 
   \section{Education}
   \vspace{-6pt}
 
-  \project{National Taiwan Normal University}{2018 {–}}{Taipei, TW}
+  \project{National Taiwan Normal University}{2018 {–} 2020}{Taipei, TW}
 
-  \small Master Program, Graduate Institute of Translation and Interpretation
+  \small Master's Program, Graduate Institute of Translation and Interpretation\\ (never graduated due to unfinished thesis)
 
   \project{Adam Mickiewicz University}{2012 {–} 2016}{Poznań, PL}
 
@@ -111,19 +121,13 @@
   \subsection{Native language} Polish \vspace{4pt}
 
   \subsection{Fluent}
-  English (IELTS 8)\\ Mandarin Chinese (TOCFL 4)\\ German (Goethe-Institut ZMP) \vspace{4pt}
+  English: IELTS 8 (C1)\\ Mandarin Chinese: TOCFL 4 (B2)\\ German: Goethe-Institut ZMP (C1) \vspace{4pt}
 
   \subsection{Good command}
   Russian, Spanish \vspace{4pt}
 
-  \subsection{Communicative}
-  Japanese, Esperanto, Norwegian, Bulgarian
-
-  \vspace{12pt}
-
-  \section{Interests}
-
-  \small Foreign languages, programming, traveling, ashtanga yoga, lifelong learning
+  \subsection{Basic knowledge}
+  Japanese, Esperanto, Norwegian, Bulgarian, Italian, Korean
 
 \end{minipage}
 
